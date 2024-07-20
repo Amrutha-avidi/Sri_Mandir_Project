@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 
 import Popup from 'reactjs-popup';
 import { FaArrowRightLong } from "react-icons/fa6";
+import { LiaRupeeSignSolid } from "react-icons/lia";
+
 import './index.css'
 
 
@@ -62,7 +64,7 @@ const PujaPackages = ({ pujaDetails }) => {
                 <section id="benefits">
                     <h1 className='about-head'>Puja Benefits</h1>
                     <div className='benefits-con'>{pujaDetails.benefits.map(each => (
-                        <div className='benefits-items'>
+                        <div className='benefits-items' key ={each._id}>
                             <img className='benefits-image' src={each.benefit_image} alt={each.benefit_head} />
                             <div className='benefits-content'>
                                 <h3 className='benefits-content-head'>{each.benefit_head}</h3>
@@ -84,7 +86,7 @@ const PujaPackages = ({ pujaDetails }) => {
                     <h1 className='about-head'>Select Pooja Package</h1>
                     <div className='packages-con'>{pujaDetails.packages.map(each => (
                         <div className='packages-con-items' key={each._id}>
-                            <h1>{each.price}</h1>
+                            <h1><LiaRupeeSignSolid />{each.price}</h1>
                             <p>{each.package_head}</p>
                             <p>{each.package_count}</p>
                             <div>{each.package_details.map((str, index) => (
@@ -97,18 +99,24 @@ const PujaPackages = ({ pujaDetails }) => {
                                         <div className='line'><hr /></div>
                                         <p className='pop-up-head2'>Enter Your Whatsapp Mobile Number</p>
                                         <p className='pop-up-para'>Your Puja booking updates like Puja Photos, Videos and other details will be sent on WhatsApp on below number.</p>
-                                        <label for="mobilenumber">Your mobile Number</label>
-                                        <input id='mobilenumber'
-                                            placeholder='+91'
-                                            value={username}
-                                            onChange={(e) => setUsername(e.target.value)} />
+                                        <div className="input-container">
+                                            <label className="input-label" htmlFor="mobilenumber">Your mobile Number</label>
+                                            <input id='mobilenumber' className="input-box"
+                                                placeholder='+91'
+                                                value={username}
+                                                onChange={(e) => setUsername(e.target.value)} />
+
+                                        </div>
+
 
                                         <p className='pop-up-head2'>Enter Your Name</p>
-                                        <label for="yourname">Your Full Name</label>
+                                        <div className='input-container'>
+                                        <label className="input-label" htmlFor="yourname">Your Full Name</label>
                                         <input id="yourname"
-                                            placeholder='Your Full Name'
+                                            placeholder='Your Full Name' className="input-box"
                                             value={mobileNumber}
                                             onChange={(e) => setMobileNumber(e.target.value)} />
+                                        </div>
                                         <div>
                                             <button className='pop-up-next'>
                                                 <a href={`/pujaDetails/${pujaDetails.sub_head}/${each.price}`}>Next</a>

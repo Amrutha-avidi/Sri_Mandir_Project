@@ -56,3 +56,25 @@ input {
     color: white;
     text-decoration: none;
 }
+.input-container {
+    width: 600px;
+    position: relative;
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+  }
+  
+.input-label {
+    position: absolute;
+    top: -0.7rem; /* Adjust to position label correctly */
+    left: 1rem; /* Adjust to position label correctly */
+    background-color: transparent; /* Ensure label text is readable */
+    padding: 0 0.5rem; /* Adjust padding for label */
+    color: #888; /* Adjust label text color */
+    border-radius: 10px;
+  }
+  
+.input-box {
+    border: 2px solid #ccc; /* Basic input border */
+    padding: 0.5rem; /* Adjust padding as needed */
+    width: 40%; 
+    height:40px
+  }

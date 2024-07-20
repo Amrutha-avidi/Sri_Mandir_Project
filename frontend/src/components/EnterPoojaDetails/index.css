@@ -1,0 +1,42 @@
+.sankalp-page-head-con1 {
+    border: 1px solid #b6c0d4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.sankalp-page-head {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sankalp-page-para {
+    color: #b6c0d4;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}.input-container {
+    position: relative;
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+  }
+  
+.input-label {
+    position: absolute;
+    top: -0.7rem; /* Adjust to position label correctly */
+    left: 1rem; /* Adjust to position label correctly */
+    background-color: white; /* Ensure label text is readable */
+    padding: 0 0.5rem; /* Adjust padding for label */
+    color: #888; /* Adjust label text color */
+  }
+  
+.input-box {
+    border: 2px solid #ccc; /* Basic input border */
+    padding: 0.5rem; /* Adjust padding as needed */
+    width: 40%; 
+    height:40px
+  }
+  
