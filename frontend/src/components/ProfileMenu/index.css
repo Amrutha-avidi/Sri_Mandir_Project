@@ -1,0 +1,125 @@
+/* ProfileMenu.css */
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    /* Adjust positioning as needed */
+    left: 75vw;
+    right: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Ensure menu appears above other content */
+    padding: 10px 20px;
+    color: #4e545f
+}
+
+.profile-menu.open {
+    display: block;
+}
+
+
+
+.profile-menu-con a {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-items:hover {
+    background-color: #f0f0f0;
+}
+
+/* Profile.css */
+.profile {
+    position: relative;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+hr {
+    padding: 0;
+}
+
+.help-and-support {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.contact-info {
+    background-color: #f9f8fd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.contact-info-sub {
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-info-sub p:first-child{
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+}
+.contact-info-sub p:last-child{
+    
+    margin-top: 0;
+}
+
+.mail-whatsapp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.sub-heads{
+    font-weight: 600;
+    color:gray
+}
+.profile-menu-con {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap:10px;
+    padding: 0;
+    margin: 0;
+}
+.list-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #b6c0d4;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.list-items div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+
+}
+.list-items span{
+    color: #4e545f;
+    font-weight:600 ;
+    font-size: 17px;
+    
+}
+.arrow-icon{
+    color:#4e545f;
+    font-size: 25px;
+}

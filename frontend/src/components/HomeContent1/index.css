@@ -1,0 +1,25 @@
+.home-content-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef5ec;
+    /* width: 100vw; */
+    padding: 70px 220px;
+    
+   
+    
+}
+.home-content-1 span{
+    color: #f18912;
+}
+.sub-head{
+    color: #6f430c;
+    font-size: 22px;
+}
+.store-con{
+    display: flex;
+    gap:20px
+}
+.main-image{
+    width: 50%;
+}

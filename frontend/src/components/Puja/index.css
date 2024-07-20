@@ -1,0 +1,54 @@
+.pooja-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0
+}
+
+.carousel .slide img {
+    width: 80vw;
+    max-height: 100%;
+}
+
+/* AutomatedCarousel.css */
+.carousel-con {
+    padding: 30px 50px;
+    background: linear-gradient(to bottom, #feecdc, #ffffff);
+    min-height: 60vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.puja-head {
+    font-size: 45px;
+    width: 70vw;
+    color: #202124;
+}
+
+.book-puja-con {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.book-puja-button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #f18912;
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 25px;
+}
+
+.book-puja-para {
+    color: #4e545f;
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    width:30vw;
+    text-align: center;
+}

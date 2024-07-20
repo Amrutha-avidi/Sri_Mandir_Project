@@ -1,0 +1,104 @@
+.booking-page-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px
+}
+
+.booking-page-head-con1 {
+    border: 1px solid #b6c0d4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.booking-page-head {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.booking-page-para {
+    color: #b6c0d4;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-page-price-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.booking-page-price-con p {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon {
+    color: blue;
+    font-size: 30px;
+}
+
+.booking-page-head-con2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #b6c0d4;
+    padding: 0px 20px;
+    width: 390px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.booking-page-head-con2 p {
+    font-size: 20px;
+}
+
+.booking-page-sub-con {
+    width: 390px;
+
+    color: #7c8189;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booking-page-sub-con p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.puja-booking-button {
+    color: white;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: #00bd68;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 380px;
+}.puja-booking-button p{
+    margin: 0;
+}

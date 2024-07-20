@@ -1,0 +1,40 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+
+.nav-bar-list-con {
+    display: flex;
+    gap: 20px
+}
+
+.nav-bar-list-items {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.language-profile-con {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+.language-profile-con select{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.profile-button{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    border:0
+}
+.profile-logo{
+    font-size: 40px;
+    color:#b6c0d4;
+}
