@@ -13,6 +13,7 @@ import './index.css'
 const PujaPackages = ({ pujaDetails }) => {
     const [username, setUsername] = useState('');
     const [mobileNumber, setMobileNumber] = useState('');
+    console.log(pujaDetails)
     return (
         <div className='second-nav'>
             <div style={{
@@ -88,7 +89,7 @@ const PujaPackages = ({ pujaDetails }) => {
                         <div className='packages-con-items' key={each._id}>
                             <h1><LiaRupeeSignSolid />{each.price}</h1>
                             <p>{each.package_head}</p>
-                            <p>{each.package_count}</p>
+                            <p>Package for {each.package_count} People</p>
                             <div>{each.package_details.map((str, index) => (
                                 <li className='packages-con-items-con' key={index}>{str}</li>
                             ))}</div>

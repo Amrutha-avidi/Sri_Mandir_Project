@@ -19,24 +19,79 @@
     font-size: 19px;
     margin: 0;
     padding: 0;
-}.input-container {
+}
+
+.input-container {
     position: relative;
-    margin-bottom: 1rem; /* Adjust spacing as needed */
-  }
-  
-.input-label {
-    position: absolute;
-    top: -0.7rem; /* Adjust to position label correctly */
-    left: 1rem; /* Adjust to position label correctly */
-    background-color: white; /* Ensure label text is readable */
-    padding: 0 0.5rem; /* Adjust padding for label */
-    color: #888; /* Adjust label text color */
-  }
-  
-.input-box {
-    border: 2px solid #ccc; /* Basic input border */
-    padding: 0.5rem; /* Adjust padding as needed */
-    width: 40%; 
-    height:40px
-  }
-  
+    margin-bottom: 1rem;
+    /* Adjust spacing as needed */
+}
+
+
+
+.enter-input-box {
+    border: 2px solid #ccc;
+    /* Basic input border */
+    padding: 0.5rem;
+    /* Adjust padding as needed */
+    width: 40%;
+    height: 40px;
+    font-size: 17px;
+}
+
+.enter-details-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.enter-details-content {
+    border-right: 1px solid #888;
+}
+
+.enter-details-sub-content {
+    width: 60vw;
+    padding:0px 30px
+}
+
+.enter-details-sub-content-head {
+    color: #242424;
+}
+
+.enter-details-sub-content-para {
+    font-size: 20px;
+    color: #707070;
+}
+
+hr {
+    color: #b6c0d4;
+
+}.pooja-prasad-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}.pooja-prasad-buttons-con{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}.pooja-prasad-buttons{
+    background-color: transparent;
+    color: #242424;
+    border-radius: 10px;
+    border:1px solid #888;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.proceed-button{
+    width:60vw;
+    padding: 20px 30px;
+    border:0;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
