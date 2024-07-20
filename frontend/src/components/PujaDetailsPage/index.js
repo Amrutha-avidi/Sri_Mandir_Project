@@ -65,16 +65,11 @@ const PujaDetailsPage = () => {
           </div>
 
 
-          <PujaPackages pujaDetails = {pujaDetails} />
+          <PujaPackages pujaDetails={pujaDetails} />
 
         </div>
-
-
-
-
-      ) : <h1>Loaidng</h1>}
-
-
+      ) : (<h1>Loading...!!</h1>)
+      }
 
     </div>
   )

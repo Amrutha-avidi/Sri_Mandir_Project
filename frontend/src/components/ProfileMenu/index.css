@@ -15,11 +15,23 @@
     color: #4e545f
 }
 
+
+
 .profile-menu.open {
     display: block;
 }
 
+.profile-login-button {
 
+    background-color: #0867d2;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+    width: 300px;
+
+}
 
 .profile-menu-con a {
     padding: 10px;
@@ -68,13 +80,15 @@ hr {
     flex-direction: column;
 
 }
-.contact-info-sub p:first-child{
+
+.contact-info-sub p:first-child {
     font-weight: bold;
     padding-bottom: 0;
     margin-bottom: 3px;
 }
-.contact-info-sub p:last-child{
-    
+
+.contact-info-sub p:last-child {
+
     margin-top: 0;
 }
 
@@ -84,19 +98,22 @@ hr {
     gap: 20px;
 
 }
-.sub-heads{
+
+.sub-heads {
     font-weight: 600;
-    color:gray
+    color: gray
 }
+
 .profile-menu-con {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    gap:10px;
+    gap: 10px;
     padding: 0;
     margin: 0;
 }
-.list-items{
+
+.list-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -106,20 +123,23 @@ hr {
     padding-bottom: 10px;
     text-decoration: none;
 }
-.list-items div{
+
+.list-items div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 
 }
-.list-items span{
+
+.list-items span {
     color: #4e545f;
-    font-weight:600 ;
+    font-weight: 600;
     font-size: 17px;
-    
+
 }
-.arrow-icon{
-    color:#4e545f;
+
+.arrow-icon {
+    color: #4e545f;
     font-size: 25px;
 }

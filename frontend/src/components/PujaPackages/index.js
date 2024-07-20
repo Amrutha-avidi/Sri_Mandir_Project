@@ -13,7 +13,6 @@ import './index.css'
 const PujaPackages = ({ pujaDetails }) => {
     const [username, setUsername] = useState('');
     const [mobileNumber, setMobileNumber] = useState('');
-    console.log(pujaDetails)
     return (
         <div className='second-nav'>
             <div style={{
@@ -104,8 +103,8 @@ const PujaPackages = ({ pujaDetails }) => {
                                             <label className="input-label" htmlFor="mobilenumber">Your mobile Number</label>
                                             <input id='mobilenumber' className="input-box"
                                                 placeholder='+91'
-                                                value={username}
-                                                onChange={(e) => setUsername(e.target.value)} />
+                                                value={mobileNumber}
+                                                onChange={(e) => setMobileNumber(e.target.value)} required />
 
                                         </div>
 
@@ -115,8 +114,8 @@ const PujaPackages = ({ pujaDetails }) => {
                                         <label className="input-label" htmlFor="yourname">Your Full Name</label>
                                         <input id="yourname"
                                             placeholder='Your Full Name' className="input-box"
-                                            value={mobileNumber}
-                                            onChange={(e) => setMobileNumber(e.target.value)} />
+                                            value={username}
+                                            onChange={(e) => setUsername(e.target.value)} required/>
                                         </div>
                                         <div>
                                             <button className='pop-up-next'>

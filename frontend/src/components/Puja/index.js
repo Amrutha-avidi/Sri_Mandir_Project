@@ -26,8 +26,6 @@ const Puja = () => {
         setCurrentSlide(index);
     };
     const handleVisible = () => setIsVisibile(true)
-    console.log(isVisibile)
-
     return (
 
         <div className='pooja-con'>

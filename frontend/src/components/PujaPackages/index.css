@@ -1,14 +1,14 @@
-.pop-up-con {
-    background-color: #f8f6f6;
+/* .pop-up-con {
+    background-color: transparent;
     padding: 10px 20px;
     width: 400px;
     border: 1px solid #7c8189;
     border-radius: 20px;
-}
+} */
 
-.line {
+/* .line {
     width: 400px;
-}
+} */
 
 .pop-up-content {
     display: flex;
@@ -66,7 +66,7 @@ input {
     position: absolute;
     top: -0.7rem; /* Adjust to position label correctly */
     left: 1rem; /* Adjust to position label correctly */
-    background-color: transparent; /* Ensure label text is readable */
+    background-color: #fff; /* Ensure label text is readable */
     padding: 0 0.5rem; /* Adjust padding for label */
     color: #888; /* Adjust label text color */
     border-radius: 10px;

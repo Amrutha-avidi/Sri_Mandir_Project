@@ -37,6 +37,7 @@ const Header = () => {
                     <div>
                         <button className='profile-button' onClick={toggleMenu} ><MdAccountCircle className='profile-logo' /></button>
                         <ProfileMenu isOpen={isMenuOpen} />
+
                     </div>
                 </div>
             </nav>

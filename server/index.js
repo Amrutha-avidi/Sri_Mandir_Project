@@ -56,7 +56,6 @@ app.get('/getallpooja', async(req,res)=>{
 })
 app.get('/puja/:id', async(req,res)=>{
     const { id } = req.params;
-    console.log(id)
     try{
         const data = await Puja.findById(id)
         return res.json(data)

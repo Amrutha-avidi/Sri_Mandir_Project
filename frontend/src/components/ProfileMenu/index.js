@@ -1,5 +1,9 @@
 // ProfileMenu.js
-import React from 'react';
+import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import { useAuth } from '../../Context/loginContext';
+import LoginPopup from '../LoginPopup';
 import { VscAccount } from "react-icons/vsc";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { RiFileList2Fill } from "react-icons/ri";
@@ -9,11 +13,36 @@ import { GiConfirmed } from "react-icons/gi";
 import './index.css'
 
 const ProfileMenu = ({ isOpen }) => {
+    const { currentUser } = useAuth();
+    const [showPopup, setShowPopup] = useState(false);
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    };
+
     return (
         <div className={`profile-menu ${isOpen ? 'open' : ''}`}>
             <div>
-                <p>Hello, Sri Mandir Bhakt</p>
-                <p>Welcome to Sri Mandir Puja Seva</p>
+                <div>
+                    {!currentUser ? (
+                        <div>
+                            <p style={{fontSize:'20px'}}>To check all available pujas & offers</p>
+
+                            <Popup trigger={<button className='profile-login-button' onClick={togglePopup}>Login / Create an Account</button>} modal>
+                                <LoginPopup onClose={togglePopup} />
+
+                            </Popup>
+
+
+
+                        </div>
+                    ) : (
+                        <div>
+                            <p>Hello, Sri Mandir Bhakt</p>
+                            <p>Welcome to Sri Mandir Puja Seva</p>
+                        </div>
+                    )}
+                </div>
+
                 <hr />
                 <p className='sub-heads'>Account Details</p>
                 <ul className='profile-menu-con'>
@@ -29,16 +58,16 @@ const ProfileMenu = ({ isOpen }) => {
                     <li className='list-items' >
                         <div>
                             <RiFileList2Fill />
-                            <span><a href='/puja' style={{'textDecoration':'none', 'paddingLeft':'0','color':'#4e545f'}}>My Pooja Bookings</a></span>
+                            <span><a href='/puja' style={{ 'textDecoration': 'none', 'paddingLeft': '0', 'color': '#4e545f' }}>My Pooja Bookings</a></span>
                         </div>
-                        <MdOutlineKeyboardArrowRight className='arrow-icon'/>
+                        <MdOutlineKeyboardArrowRight className='arrow-icon' />
                     </li>
                     <li className='list-items'>
                         <div>
                             <RiFileList2Fill />
                             <span>My Ramotsav Bookings</span>
                         </div>
-                        <MdOutlineKeyboardArrowRight className='arrow-icon'/>
+                        <MdOutlineKeyboardArrowRight className='arrow-icon' />
                     </li>
                     <li className='list-items' >
                         <div>
@@ -70,8 +99,9 @@ const ProfileMenu = ({ isOpen }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+
+        </div >
     );
 };
 
