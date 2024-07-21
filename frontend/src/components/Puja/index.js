@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import PoojaContent1 from '../PoojaContent1';
+
 import './index.css'
 
 
@@ -10,6 +11,7 @@ const Puja = () => {
     const [isVisibile, setIsVisibile] = useState(false)
     const [currentSlide, setCurrentSlide] = useState(0);
     const interval = 5000
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {

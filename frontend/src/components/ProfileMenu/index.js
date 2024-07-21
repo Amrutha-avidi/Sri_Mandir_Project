@@ -19,6 +19,7 @@ const ProfileMenu = ({ isOpen }) => {
         setShowPopup(!showPopup);
     };
 
+
     return (
         <div className={`profile-menu ${isOpen ? 'open' : ''}`}>
             <div>

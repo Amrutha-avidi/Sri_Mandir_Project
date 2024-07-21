@@ -1,8 +1,8 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import { useParams } from 'react-router-dom';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { LiaRupeeSignSolid } from "react-icons/lia";
-import { useAuth } from '../../Context/loginContext';
+import { AuthContext } from '../../Context/loginContext';
 
 // import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import './index.css'
@@ -10,7 +10,8 @@ import './index.css'
 
 
 const EnterPoojaDetails = () => {
-  const { currentUser } = useAuth();
+  const {currentUser} = useContext(AuthContext)
+  // const { currentUser } = useAuth();
 
   const { pujaName, pujaPrice, pujaHead } = useParams();
   console.log(currentUser)

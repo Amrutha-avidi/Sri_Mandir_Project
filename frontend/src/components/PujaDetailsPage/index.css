@@ -156,27 +156,5 @@
     height: 450px;
 }
 
-.packages-con {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
 
-.packages-con-items {
-    padding: 15px;
-    border: 1px solid #4e545f;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 
-}
-
-.packages-con-items-con {
-    list-style: none;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #4e545f;
-
-}

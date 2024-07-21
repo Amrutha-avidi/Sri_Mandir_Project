@@ -56,25 +56,110 @@ input {
     color: white;
     text-decoration: none;
 }
+
 .input-container {
     width: 600px;
     position: relative;
-    margin-bottom: 1rem; /* Adjust spacing as needed */
-  }
-  
+    margin-bottom: 1rem;
+    /* Adjust spacing as needed */
+}
+
 .input-label {
     position: absolute;
-    top: -0.7rem; /* Adjust to position label correctly */
-    left: 1rem; /* Adjust to position label correctly */
-    background-color: #fff; /* Ensure label text is readable */
-    padding: 0 0.5rem; /* Adjust padding for label */
-    color: #888; /* Adjust label text color */
+    top: -0.7rem;
+    /* Adjust to position label correctly */
+    left: 1rem;
+    /* Adjust to position label correctly */
+    background-color: #fff;
+    /* Ensure label text is readable */
+    padding: 0 0.5rem;
+    /* Adjust padding for label */
+    color: #888;
+    /* Adjust label text color */
     border-radius: 10px;
-  }
-  
+}
+
 .input-box {
-    border: 2px solid #ccc; /* Basic input border */
-    padding: 0.5rem; /* Adjust padding as needed */
-    width: 40%; 
-    height:40px
-  }
+    border: 2px solid #ccc;
+    /* Basic input border */
+    padding: 0.5rem;
+    /* Adjust padding as needed */
+    width: 40%;
+    height: 40px
+}
+
+.packages-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.packages-para1 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.packages-para2 {
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #4e545f;
+}
+
+.packages-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.packages-con-items {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}.packages-con-items-content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.packages-con-items-content2{
+    margin-top: 20px;
+}
+
+.participate-pop-up {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+.packages-con-items-con {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #4e545f;
+    
+   
+
+}
+
+.divider {
+    margin: 5px 0;
+    /* Adjust spacing as needed */
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+   
+}
