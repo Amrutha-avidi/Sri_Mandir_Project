@@ -1,8 +1,8 @@
-import React ,{useContext}from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { LiaRupeeSignSolid } from "react-icons/lia";
-import { AuthContext } from '../../Context/loginContext';
+import { useAuth } from '../../Context/loginContext';
 
 // import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import './index.css'
@@ -10,8 +10,8 @@ import './index.css'
 
 
 const EnterPoojaDetails = () => {
-  const {currentUser} = useContext(AuthContext)
-  // const { currentUser } = useAuth();
+  // const {currentUser} = useContext(AuthContext)
+  const { currentUser } = useAuth();
 
   const { pujaName, pujaPrice, pujaHead } = useParams();
   console.log(currentUser)
@@ -27,9 +27,7 @@ const EnterPoojaDetails = () => {
             <h2 className='enter-details-sub-content-head'>Your WhatsApp Number</h2>
             <p className='enter-details-sub-content-para'>Your Puja booking updates like Puja Photos, Videos and other details will be sent on WhatsApp on below number.
             </p>
-            <input className="enter-input-box" type="text" id="mobilenumber" name="mobilenumber" placeholder='Your WhatsApp Number' />
-
-
+            <input className="enter-input-box" type="text"  value={currentUser.phoneNumber}  placeholder='Your WhatsApp Number' readOnly />
           </div>
 
           <div className='enter-details-sub-content'>

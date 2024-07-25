@@ -57,7 +57,8 @@ const PujaDetailsPage = () => {
 
               </div>
               <p className='puja-details-list-para'>Till now <span>2,00,000+ Devotees</span> have participated in Pujas conducted by Sri Mandir Puja Seva.</p>
-              <Link to="packages" smooth={true} duration={500} className='puja-participate-button' style={{ textDecoration: 'none', cursor: 'pointer' }}>Select puja package <FaArrowRightLong /></Link>
+              <Link to="packages" smooth={true} duration={500} className='puja-participate-button'
+               style={{ textDecoration: 'none', cursor: 'pointer'}}>Select puja package <FaArrowRightLong /></Link>
 
 
             </div>

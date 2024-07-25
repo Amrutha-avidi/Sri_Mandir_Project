@@ -11,30 +11,37 @@ import { GiConfirmed } from "react-icons/gi";
 
 
 import './index.css'
+import { Link } from 'react-router-dom';
 
-const ProfileMenu = ({ isOpen }) => {
+const ProfileMenu = () => {
     const { currentUser } = useAuth();
     const [showPopup, setShowPopup] = useState(false);
     const togglePopup = () => {
-        setShowPopup(!showPopup);
+        setShowPopup(false);
     };
+    console.log(currentUser)
+    // className={`profile-menu ${isOpen ? 'open' : ''}`}
 
 
     return (
-        <div className={`profile-menu ${isOpen ? 'open' : ''}`}>
+        <div >
             <div>
                 <div>
                     {!currentUser ? (
                         <div>
-                            <p style={{fontSize:'20px'}}>To check all available pujas & offers</p>
+                            <p style={{ fontSize: '20px' }}>To check all available pujas & offers</p>
 
-                            <Popup trigger={<button className='profile-login-button' onClick={togglePopup}>Login / Create an Account</button>} modal>
-                                <LoginPopup onClose={togglePopup} />
+
+                            <Popup open={showPopup} trigger={<button className='profile-login-button'
+                                onClick={togglePopup}>Login / Create an Account</button>}
+                                closeOnDocumentClick={true} // Prevents closing on outside click
+                                modal 
+                                // contentStyle={{ width: 'fit-content', minWidth: '200px' }} // Adjust width as needed
+                                position="right center">
+                               <LoginPopup onClose={() => { setShowPopup(false) }} />
+
 
                             </Popup>
-
-
-
                         </div>
                     ) : (
                         <div>
@@ -59,7 +66,8 @@ const ProfileMenu = ({ isOpen }) => {
                     <li className='list-items' >
                         <div>
                             <RiFileList2Fill />
-                            <span><a href='/puja' style={{ 'textDecoration': 'none', 'paddingLeft': '0', 'color': '#4e545f' }}>My Pooja Bookings</a></span>
+                            <span><Link to='/puja'
+                                style={{ 'textDecoration': 'none', 'paddingLeft': '0', 'color': '#4e545f' }}>My Pooja Bookings</Link></span>
                         </div>
                         <MdOutlineKeyboardArrowRight className='arrow-icon' />
                     </li>

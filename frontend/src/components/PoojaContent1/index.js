@@ -46,7 +46,10 @@ const PoojaContent1 = () => {
                                 ))}
                             </ul>
                         </div>
-                        <Link to={`/puja/${each._id}`} className='puja-participate-button'>Participate <FaArrowRightLong/></Link> 
+                        <div style={{marginTop:'auto'}}>
+                        <Link to={`/puja/${each._id}`} style={{textDecoration:'none' }} className='puja-participate-button'>Participate <FaArrowRightLong/></Link> 
+
+                        </div>
 
                     </div>
                 ))}

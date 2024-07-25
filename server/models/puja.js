@@ -27,11 +27,6 @@ const Puja = mongoose.Schema({
     temple_details_description: String,
     packages: [packageDetails]
 
-
-
-
-
-
 })
 const PujaModel = mongoose.model('puja', Puja)
 module.exports = PujaModel

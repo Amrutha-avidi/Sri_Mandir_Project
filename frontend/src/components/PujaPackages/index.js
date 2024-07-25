@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import {Link} from 'react-router-dom'
 
 
 import Popup from 'reactjs-popup';
@@ -25,22 +26,22 @@ const PujaPackages = ({ pujaDetails }) => {
                 "cursor": "pointer"
             }}>
                 <li className='sub-nav-links'>
-                    <Link to="about" smooth={true} duration={500}>
+                    <Link to="about" smooth="true" duration={500} style={{textDecoration:'none'}}>
                         About
                     </Link>
                 </li>
                 <li className='sub-nav-links'>
-                    <Link to="benefits" smooth={true} duration={500}>
+                    <Link to="benefits" smooth="true" duration={500} style={{textDecoration:'none'}}>
                         Benefits
                     </Link>
                 </li>
                 <li className='sub-nav-links'>
-                    <Link to="templeDetails" smooth={true} duration={500}>
+                    <Link to="templeDetails" smooth="true" duration={500} style={{textDecoration:'none'}}>
                         Temple Details
                     </Link>
                 </li>
                 <li className='sub-nav-links'>
-                    <Link to="packages" smooth={true} duration={500}>
+                    <Link to="packages" smooth="true" duration={500} style={{textDecoration:'none'}}>
                         Packages
                     </Link>
                 </li>
@@ -129,7 +130,7 @@ const PujaPackages = ({ pujaDetails }) => {
                                             </div>
                                             <div>
                                                 <button className='pop-up-next'>
-                                                    <a href={`/pujaDetails/${pujaDetails.sub_head}/${each.price}`}>Next</a>
+                                                    <Link to={`/pujaDetails/${pujaDetails.sub_head}/${each.price}`}>Next</Link>
                                                 </button>
                                             </div>
                                         </div>

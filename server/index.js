@@ -4,6 +4,8 @@ const connectDB = require('./config/db')
 const cors = require('cors')
 const Explore  = require('./models/explore')
 const Puja  = require('./models/puja')
+const Login  = require('./models/login')
+
 
 
 
@@ -62,6 +64,18 @@ app.get('/puja/:id', async(req,res)=>{
     }catch(err){
         console.log(err.message)
     }
+})
+
+app.post('/login', async(req,res)=>{
+    try{
+        const newData = new Login(req.body)
+        newData.save()
+        return res.json(await Login.find())
+
+    }catch(err){
+        console.log(err.message)
+    }
+
 })
 
 

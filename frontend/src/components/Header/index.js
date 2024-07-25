@@ -1,7 +1,9 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react'
+import Popup from 'reactjs-popup';
+
+// import { useState } from 'react'
 import ProfileMenu from '../ProfileMenu';
 
 import { MdAccountCircle } from "react-icons/md";
@@ -9,12 +11,7 @@ import './index.css'
 
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
+  
     return (
         <header>
             <nav className='nav-bar'>
@@ -34,14 +31,30 @@ const Header = () => {
                         <option value="hindi">Hindi</option>
 
                     </select>
-                    <div>
-                        <button className='profile-button' onClick={toggleMenu} ><MdAccountCircle className='profile-logo' /></button>
-                        <ProfileMenu isOpen={isMenuOpen} />
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                        <Popup
+                            trigger=
+                            {
+                                <button className='profile-button'  >
+                                    <MdAccountCircle className='profile-logo' />
+                                </button>
+                            } closeOnDocumentClick={true}
+                            // modal
+                            nested
+                            position="bottom right" contentStyle={{ width: "360px", padding: '10px 20px' }}>
+                            {/* <ProfileMenu onClose={toggleMenu} /> */}
+                            {(close) => (
+                                <ProfileMenu onClose={close}/>
+                            )}
+
+
+
+                        </Popup>
 
                     </div>
                 </div>
             </nav>
-            
+
         </header>
     );
 };
